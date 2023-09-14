@@ -25,7 +25,7 @@ const Card = () => {
   };
 
   useEffect(() => {
-    // Load data cuaca untuk London saat komponen pertama kali dimuat
+    // Load data cuaca
     fetchWeatherData("London");
   }, []);
 
