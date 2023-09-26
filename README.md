@@ -7,7 +7,7 @@ simple website that presents weather information
 **Step 1:** Fork and clone this repository.
 
 ```bash
-git clone https://github.com/{user}/Meals.git
+git clone https://github.com/{user}/weather.git
 ```
 
 **Step 2:** Install dependencies.
