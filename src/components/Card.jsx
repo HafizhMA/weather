@@ -25,7 +25,6 @@ const Card = () => {
   };
 
   useEffect(() => {
-    // Load data cuaca
     fetchWeatherData("London");
   }, []);
 
@@ -42,9 +41,9 @@ const Card = () => {
   return (
     <section
       id="cardSection"
-      className="h-screen flex justify-center items-center default-font-color"
+      className="h-screen flex justify-center items-center default-font-color w-[500px] mx-auto"
     >
-      <div className="boxContainer container mx-auto rounded">
+      <div className="boxContainer container rounded border-2 border-blue-700">
         <div className="searchBox w-64 mx-auto my-5">
           <form className="flex" onSubmit={handleSubmit}>
             <input
@@ -63,8 +62,8 @@ const Card = () => {
           </form>
         </div>
         {weatherData &&
-        weatherData.weather &&
-        weatherData.weather.length > 0 ? (
+          weatherData.weather &&
+          weatherData.weather.length > 0 ? (
           <>
             <div className="city text-center my-5">
               <h3>Kota: {weatherData.name}</h3>
